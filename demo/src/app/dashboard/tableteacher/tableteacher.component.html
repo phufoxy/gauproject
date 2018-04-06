@@ -1,0 +1,248 @@
+    <!--Main Navigation-->
+    <header>
+
+            <!-- Navbar -->
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+                <div class="container-fluid">
+      
+                     <!-- Brand -->
+                  <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/angular/angular-bootstrap-getting-started/" target="_blank">
+                    <strong class="blue-text">Swingming</strong>
+                </a>
+      
+                <!-- Collapse -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+      
+                <!-- Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      
+                        <!-- Left -->
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link waves-effect" href="#">Home
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link waves-effect" href="https://mdbootstrap.com/angular/angular-bootstrap-getting-started/" target="_blank">About MDB</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link waves-effect" href="https://mdbootstrap.com/angular/getting-started/" target="_blank">Free download</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link waves-effect" href="https://mdbootstrap.com/angular/angular-tutorial/" target="_blank">Free tutorials</a>
+                            </li>
+                        </ul>
+      
+                        <!-- Right -->
+                        <ul class="navbar-nav nav-flex-icons">
+    
+                            
+                            <li class="nav-item" [matMenuTriggerFor]="menu">
+                                <a href="javascript:void(0)" class="nav-link border border-light rounded waves-effect"
+                                    target="_blank">
+                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg" alt="Contact Person" style="height: 22px; width: 22px;border-radius: 50%;"> admin
+                                </a>
+                            </li>
+                            <mat-menu #menu="matMenu">
+                                    <button mat-menu-item>Đăng Xuất</button>
+                                    <button mat-menu-item>Hỗ Trợ</button>
+                            </mat-menu>
+                        </ul>
+      
+                    </div>
+      
+                </div>
+            </nav>
+            <!-- Navbar -->
+      
+            <!-- Sidebar -->
+            <div class="sidebar-fixed position-fixed">
+      
+                <a class="logo-wrapper waves-effect">
+                    <img src="../assets/img/angular-mdb.png" class="img-fluid" alt="">
+                </a>
+      
+                <div class="list-group list-group-flush">
+      
+                        <a routerLink="/general"  routerLinkActive="active" class="list-group-item list-group-item-action waves-effect">
+                            <i class="fa fa-pie-chart mr-3"></i>Tổng Quan
+                        </a>
+                        <a routerLink="/profile" routerLinkActive="active"  class="list-group-item list-group-item-action waves-effect" >
+                            <i class="fa fa-user mr-3"></i>Thông Tin</a>
+                        <a routerLink="/class" routerLinkActive="active"  class="list-group-item list-group-item-action waves-effect" >
+                              <i class="fa fa-table mr-3"></i> Dữ Liệu Lớp</a>
+                        <a routerLink="/table" routerLinkActive="active"  class="list-group-item list-group-item-action waves-effect" >
+                            <i class="fa fa-table mr-3"></i>Dữ Liệu Sinh Viên</a>
+                        <a routerLink="/tableteacher"  routerLinkActive="active"  class="list-group-item list-group-item-action waves-effect" >
+                             <i class="fa fa-table mr-3"></i>Dữ Liệu Giáo Viên</a>
+                        <a routerLink="/form" routerLinkActive="active"  class="list-group-item list-group-item-action waves-effect">
+                            <i class="fa fa-map mr-3"></i>Biểu mẫu</a>
+                        <a routerLink="nonExistingPath" routerLinkActive="active"   class="list-group-item list-group-item-action waves-effect">
+                            <i class="fa fa-exclamation mr-3"></i>Lỗi</a>
+                </div>
+            </div>
+            <!-- Sidebar -->
+      
+        </header>
+        <!--Main Navigation-->
+        <main [ngClass]="{'py-0 px-0 my-0 mx-0': specialPage}"  class="pt-5 mx-lg-5" >
+        
+            <div class="mt-5">
+              
+      <div class="row mt-5">
+        <div class="col-md-12">
+              <!--Card-->
+              <div class="card mb-4">
+    
+                    <!-- Card header -->
+                    <div class="card-header text-center" style="font-size: 25px;">
+                        Danh Sách Giáo Viên
+                    </div>
+                    <div class="content-card">
+                        <!-- panel -->
+                        <div class="panel">
+                            <div class="panel-heading"> 
+                              <i class="fa fa-wrench" style=" position: absolute;right: 10px;"></i>
+                              <i class="fa fa-remove" style=" position: absolute;right: 30px;"></i>
+                              <span class="panel-title">
+                              Lê Văn Nam</span>
+                            </div>
+                            <div class="panel-body" >
+                                <h2>Ngày Sinh:12/2/1984</h2>
+                                <h2>Bằng:Thạc Sĩ</h2>
+                                <h2>Email:Levannamoccho1997@gmail.com</h2>
+                                <h2>Số Điện Thoại:0961688293</h2>
+                           </div>
+                           <div class="panel-body-right" style="float: right">
+                             <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg" >
+                           </div>
+                        </div>  
+                        <!-- panel -->
+                        <!-- panel -->
+                        <div class="panel">
+                                <div class="panel-heading"> 
+                                  <i class="fa fa-wrench" style=" position: absolute;right: 10px;"></i>
+                                  <i class="fa fa-remove" style=" position: absolute;right: 30px;"></i>
+                                  <span class="panel-title">
+                                  Lê Văn Nam</span>
+                                </div>
+                                <div class="panel-body" >
+                                    <h2>Ngày Sinh:12/2/1984</h2>
+                                    <h2>Bằng:Thạc Sĩ</h2>
+                                    <h2>Email:Levannamoccho1997@gmail.com</h2>
+                                    <h2>Số Điện Thoại:0961688293</h2>
+                               </div>
+                               <div class="panel-body-right" style="float: right">
+                                 <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg" >
+                               </div>
+                            </div>  
+                            <!-- panel -->
+                            <!-- panel -->
+                        <div class="panel">
+                                <div class="panel-heading"> 
+                                  <i class="fa fa-wrench" style=" position: absolute;right: 10px;"></i>
+                                  <i class="fa fa-remove" style=" position: absolute;right: 30px;"></i>
+                                  <span class="panel-title">
+                                  Lê Văn Nam</span>
+                                </div>
+                                <div class="panel-body" >
+                                    <h2>Ngày Sinh:12/2/1984</h2>
+                                    <h2>Bằng:Thạc Sĩ</h2>
+                                    <h2>Email:Levannamoccho1997@gmail.com</h2>
+                                    <h2>Số Điện Thoại:0961688293</h2>
+                               </div>
+                               <div class="panel-body-right" style="float: right">
+                                 <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg" >
+                               </div>
+                            </div>  
+                            <!-- panel -->
+                            <!-- panel -->
+                        <div class="panel">
+                                <div class="panel-heading"> 
+                                  <i class="fa fa-wrench" style=" position: absolute;right: 10px;"></i>
+                                  <i class="fa fa-remove" style=" position: absolute;right: 30px;"></i>
+                                  <span class="panel-title">
+                                  Lê Văn Nam</span>
+                                </div>
+                                <div class="panel-body" >
+                                    <h2>Ngày Sinh:12/2/1984</h2>
+                                    <h2>Bằng:Thạc Sĩ</h2>
+                                    <h2>Email:Levannamoccho1997@gmail.com</h2>
+                                    <h2>Số Điện Thoại:0961688293</h2>
+                               </div>
+                               <div class="panel-body-right" style="float: right">
+                                 <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg" >
+                               </div>
+                            </div>  
+                            <!-- panel -->
+                            <!-- panel -->
+                        <div class="panel">
+                                <div class="panel-heading"> 
+                                  <i class="fa fa-wrench" style=" position: absolute;right: 10px;"></i>
+                                  <i class="fa fa-remove" style=" position: absolute;right: 30px;"></i>
+                                  <span class="panel-title">
+                                  Lê Văn Nam</span>
+                                </div>
+                                <div class="panel-body" >
+                                    <h2>Ngày Sinh:12/2/1984</h2>
+                                    <h2>Bằng:Thạc Sĩ</h2>
+                                    <h2>Email:Levannamoccho1997@gmail.com</h2>
+                                    <h2>Số Điện Thoại:0961688293</h2>
+                               </div>
+                               <div class="panel-body-right" style="float: right">
+                                 <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg" >
+                               </div>
+                            </div>  
+                            <!-- panel -->
+                    </div>   
+                </div>
+                <!--/.Card-->      
+        </div>
+      </div>
+      
+            </div>
+          </main>
+      
+        <!--Footer-->
+        <footer class="page-footer text-center font-small primary-color-dark darken-2 mt-4 wow fadeIn  ">
+      
+            
+            <!--/.Call to action-->
+      
+            <hr class="my-4">
+      
+            <!-- Social icons -->
+            <div class="pb-4">
+                <a href="https://www.facebook.com/mdbootstrap" target="_blank">
+                    <i class="fa fa-facebook mr-3"></i>
+                </a>
+      
+                <a href="https://twitter.com/MDBootstrap" target="_blank">
+                    <i class="fa fa-twitter mr-3"></i>
+                </a>
+      
+                <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
+                    <i class="fa fa-youtube mr-3"></i>
+                </a>
+      
+                <a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank">
+                    <i class="fa fa-google-plus mr-3"></i>
+                </a>
+      
+              
+            </div>
+            <!-- Social icons -->
+      
+            <!--Copyright-->
+            <div class="footer-copyright py-3">
+                © 2018 Copyright:
+                <a href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank"> MDBootstrap.com </a>
+            </div>
+            <!--/.Copyright-->
+      
+        </footer>
+        <!--/.Footer-->

@@ -1,0 +1,180 @@
+    <!--Main Navigation-->
+    <header>
+
+      <!-- Navbar -->
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+          <div class="container-fluid">
+
+              <!-- Brand -->
+              <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/angular/angular-bootstrap-getting-started/" target="_blank">
+                  <strong class="blue-text">Swingming</strong>
+              </a>
+
+              <!-- Collapse -->
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                  aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <!-- Links -->
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                  <!-- Left -->
+                  <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                          <a class="nav-link waves-effect" href="#">Trang Chủ
+                              <span class="sr-only">(current)</span>
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link waves-effect" href="https://mdbootstrap.com/angular/angular-bootstrap-getting-started/" target="_blank">Hỗ Trợ</a>
+                      </li>
+                  </ul>
+
+                  <!-- Right -->
+                 <!-- Right -->
+                 <ul class="navbar-nav nav-flex-icons">
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="ml-1 nav-link border border-light rounded waves-effect" [matMenuTriggerFor]="menu">
+                        <i class="fa fa-user-secret"></i>
+                        <mat-menu #menu="matMenu">
+                          <button mat-menu-item>Đăng Xuất</button>
+                          <button mat-menu-item>Hỗ Trợ</button>
+                        </mat-menu></a>
+                    </li>
+                </ul>
+
+              </div>
+
+          </div>
+      </nav>
+      <!-- Navbar -->
+
+      <!-- Sidebar -->
+      <div class="sidebar-fixed position-fixed">
+
+          <a class="logo-wrapper waves-effect">
+              <img src="../assets/img/angular-mdb.png" class="img-fluid" alt="">
+          </a>
+
+          <div class="list-group list-group-flush">
+  
+                <a routerLink="/general"  routerLinkActive="active" class="list-group-item list-group-item-action waves-effect">
+                    <i class="fa fa-pie-chart mr-3"></i>Tổng Quan
+                </a>
+                <a routerLink="/profile" routerLinkActive="active"  class="list-group-item list-group-item-action waves-effect" >
+                    <i class="fa fa-user mr-3"></i>Thông Tin</a>
+                <a routerLink="/class" routerLinkActive="active"  class="list-group-item list-group-item-action waves-effect" >
+                      <i class="fa fa-table mr-3"></i>Lớp</a>
+                <a routerLink="/table" routerLinkActive="active"  class="list-group-item list-group-item-action waves-effect" >
+                    <i class="fa fa-table mr-3"></i>Dữ Liệu</a>
+                <a routerLink="/tableteacher"  routerLinkActive="active"  class="list-group-item list-group-item-action waves-effect" >
+                     <i class="fa fa-table mr-3"></i>Dữ Liệu Giáo Viên</a>
+                <a routerLink="/form" routerLinkActive="active"  class="list-group-item list-group-item-action waves-effect">
+                    <i class="fa fa-map mr-3"></i>Biểu mẫu</a>
+                <a routerLink="nonExistingPath" routerLinkActive="active"   class="list-group-item list-group-item-action waves-effect">
+                    <i class="fa fa-exclamation mr-3"></i>Lỗi</a>
+    
+            </div>
+
+      </div>
+      <!-- Sidebar -->
+
+  </header>
+  <!--Main Navigation-->
+  <main [ngClass]="{'py-0 px-0 my-0 mx-0': specialPage}"  class="pt-5 mx-lg-5" >
+  
+      <div class="mt-5">
+        
+        <!--Contact Form-->
+        <div class="col-md-9 mb-4">
+
+            <!--Card-->
+            <div class="card">
+
+                <!--Card content-->
+                <div class="card-body">
+
+                    <form>
+                        <p class="h5 text-center mb-4">Cung Cấp Thông Tin</p>
+                        <div class="md-form">
+                          <i class="fa fa-user prefix grey-text"></i>
+                          <input type="text" id="form3" class="form-control" mdbActive>
+                          <label for="form3">Họ Và Tên</label>
+                        </div>
+                    
+                        <div class="md-form">
+                          <i class="	fa fa-address-book prefix grey-text"></i>
+                          <input type="text" id="form2" class="form-control" mdbActive>
+                          <label for="form2">Địa Chỉ</label>
+                        </div>
+                       <div class="md-form">
+                        <i class="fa fa-headphones prefix grey-text"></i>
+                        <input type="text" id="form2" class="form-control" mdbActive>
+                        <label for="form2">Số Điện Thoại</label>
+                      </div>
+                      <div class="md-form">
+                        <i class="fa fa-envelope prefix grey-text"></i>
+                        <input type="text" id="form2" class="form-control" mdbActive>
+                        <label for="form2">Giới Tính</label>
+                      </div>
+                      <div class="md-form">
+                          <i class="fa fa-tag prefix grey-text"></i>
+                          <input type="text" id="form32" class="form-control" mdbActive>
+                          <label for="form34">Sở Thích</label>
+                      </div>
+                    
+                      <div class="md-form">
+                          <i class="fa fa-pencil prefix grey-text"></i>
+                          <textarea type="text" id="form8" class="md-textarea" style="height: 100px" mdbActive></textarea>
+                          <label for="form8">Lưu Ý</label>
+                      </div>
+                    
+                      <div class="text-center">
+                          <button class="btn btn-unique waves-light" mdbRippleRadius>Gửi Yêu Cầu <i class="fa fa-paper-plane-o ml-1"></i></button>
+                      </div>
+                    
+                    </form>
+                    <!--Contact Form-->   
+                </div>
+
+            </div>
+            <!--/.Card-->
+
+        </div>
+        <!--Grid column-->   
+      </div>
+    </main>
+
+  <!--Footer-->
+  <footer class="page-footer text-center font-small primary-color-dark darken-2 mt-4 wow fadeIn ">
+      <hr class="my-4">
+      <!-- Social icons -->
+      <div class="pb-4">
+          <a href="https://www.facebook.com/mdbootstrap" target="_blank">
+              <i class="fa fa-facebook mr-3"></i>
+          </a>
+
+          <a href="https://twitter.com/MDBootstrap" target="_blank">
+              <i class="fa fa-twitter mr-3"></i>
+          </a>
+
+          <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
+              <i class="fa fa-youtube mr-3"></i>
+          </a>
+
+          <a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank">
+              <i class="fa fa-google-plus mr-3"></i>
+          </a>
+      </div>
+      <!-- Social icons -->
+
+      <!--Copyright-->
+      <div class="footer-copyright py-3">
+          © 2018 Copyright:
+          <a href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank"> MDBootstrap.com </a>
+      </div>
+      <!--/.Copyright-->
+
+  </footer>
+  <!--/.Footer-->
